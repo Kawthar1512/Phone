@@ -296,41 +296,40 @@
 							<p class="pn1">08123456789 &nbsp; &nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
 									class="material-icons">call</i> </p>
-							<p class="pnum"><i class="material-icons"
-									style="font-size:13px;color:red;transform: rotate(50deg);">arrow_upward</i> &nbsp;
-								Incoming51s</p>
+							
 
 						</div>
 					</div>
 
 
 					<div class="call-log-nav">
-						<button> <i class="material-icons">star_border</i>
-							favorites</button>
-						<button id="frdial" onclick="dialpad()">Keyboard</button>
+						<button> <i class="material-icons">star_border</i><p>favorites</p>
+</button>
+						<button id="frdial" onclick="dialpad()"><i class="material-icons">keyboard</i><p>Keyboard</p>
+						</button>
 						<button><i class="material-icons">more_horiz</i>
-							More</button>
+							<p>More</p> </button>
 					</div>
 					<div id="dialpad">
 						<input type="number" id="diinp">
 						<button onclick="inputdial(1)">1 <p>oo</p></button>
 						<button onclick="inputdial(2)">2 <p>ABC</p></button>
-						<button>3 <p>DEF</p></button>
-						<button>4 <p>GHI</p></button>
-						<button>5 <p>JKL</p></button>
-						<button>6 <p>MNO</p></button>
-						<button>7 <p>PQRS</p></button>
-						<button>8 <p>TUV</p></button>
-						<button>9 <p>WXYZ</p></button>
-						<button style="font-size: 25px;">* </button>
-						<button id="lastcont">0 <p>+</p></button>
-						<button>#</button>
+						<button onclick="inputdial(3)">3 <p>DEF</p></button>
+						<button onclick="inputdial(4)">4 <p>GHI</p></button>
+						<button onclick="inputdial(5)">5 <p>JKL</p></button>
+						<button onclick="inputdial(6)">6 <p>MNO</p></button>
+						<button onclick="inputdial(7)">7 <p>PQRS</p></button>
+						<button onclick="inputdial(8)">8 <p>TUV</p></button>
+						<button onclick="inputdial(9)">9 <p>WXYZ</p></button>
+						<button style="font-size: 25px;" onclick="inputdial(2)">* </button>
+						<button id="lastcont" onclick="inputdial(0)">0 <p>+</p></button>
+						<button onclick="inputdial(#)">#</button>
 						<div id="sims">
-							<div>favorites</div>
-							<div id="glo">Glo NG</div>
-							<div id="airtel"> Airtel</div>
-							<div><i class="material-icons" style="font-size:30px">more_horiz</i>
-								<p style="margin-top: -20px;font-size: 10px; color: gray;">More</p>
+							<button style="margin-top: -3px;margin-left: 6px;"> <i class="material-icons" style="font-size: 16px;">star_border</i><p>favorites</p></button>
+								<div id="glo">Glo NG</div>
+							<div id="airtel"> Airtel </div>
+							<div style="margin-left: 6px;"><i class="material-icons" style="font-size:20px;margin-top: 10px;margin-left: -14px;">more_horiz</i>
+								<p style="margin-top: -8px;font-size: 10px; color: gray;margin-left: -14px;">More</p>
 							</div>
 						</div>
 					</div>
@@ -343,11 +342,11 @@
 				<!-- <h2>Designed by Kawthar &copy;</h2> -->
 			</div>
 			<div id="homenav">
-				<div id="minimise"><i class="material-icons">crop_square</i>
+				<div id="minimise"><i class="material-icons" style="font-size: 19px;">crop_square</i>
 				</div>
 				<div id="middle"></div>
-				<div id="exit"><i class="material-icons" style="font-size: 30px;margin-top: -3px;">keyboard_arrow_left</i>
-				</div>
+				<button id="exit" onclick="exit()" ><i class="material-icons"  style="font-size: 30px;margin-top: -7px;">keyboard_arrow_left</i>
+				</button>
 			</div>
 
 			<div class="nav-bot">
