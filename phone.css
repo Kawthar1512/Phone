@@ -457,7 +457,10 @@ section{display: flex;}
 #screen3{
 	/* background: rgba(231, 76, 76, 0.315); */
 	width: 253px;
-	background-image: url(wallpaper6.jpg);
+	background-image: url(icecream.jpg);
+	background-repeat: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	height: 501px;
 	border: 1.8px solid black;
 	/* padding-top: 100px; */
@@ -748,6 +751,7 @@ padding: 4px;
 	display: flex;
 	justify-content: space-around;
 	background: transparent;
+	display: none;
 
 }
 #middle{

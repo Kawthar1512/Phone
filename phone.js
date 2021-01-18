@@ -5,6 +5,7 @@ var datebar = document.getElementById('datebar')
 // var tolock = document.getElementById('u')
 
 var unlck = document.getElementById('unlock')
+var hnav = document.getElementById('homenav')
 function openlock() {
   
     if (lockscreen) {
@@ -16,6 +17,8 @@ function openlock() {
             forim.style.backgroundRepeat= "no-repeat"
             forim.style.backgroundSize = "cover"
             unlck.style.display="block"
+            
+
             
             // forim.style.transition="10s"
             // forim.style.transitionTimingFunction ="ease"
@@ -140,6 +143,7 @@ function dishomepage(){
             sc3.style.backgroundPosition="center"
             top3.style.display="flex"
             secscreen.style.display="none"
+            hnav.style.display="flex"
            
             
         }
