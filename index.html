@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='projcalc.css'>
+</head>
+
+<body>
+    <h2>Scientific Calculator</h2>
+    <div class="whole">
+
+        <div id="main">
+            <div id="result_container">
+                <div id="final">&nbsp;</div>
+                <div id="computational">0</div>
+            </div>
+            <div id="operation_container">
+                <div>
+                    <div>
+                        <button>Deg</button>
+                        <button data-type="special_operator" identity="OPENING_BRACE" data-text="(">(</button>
+                        <button data-type="special_operator" identity="CLOSING_BRACE" data-text=")">)</button>
+                        <button>F-E</button>
+                        <button>M</button>
+                    </div>
+                    <div>
+                        <button data-type="special_operator" identity="PI">PI</button>
+                        <button data-type="math_operator" data-text="sin">sin</button>
+                        <button data-type="math_operator" data-text="cos">cos</button>
+                        <button data-type="math_operator" data-text="tan">tan</button>
+                        <button data-type="special_operator" identity="PLUS_OR_MINUS">+/-</button>
+                    </div>
+                    <div>
+                        <button data-type="special_operator" identity="SQUARE">x<sup>2</sup></button>
+                        <button data-type="math_operator" data-text="asin">sin<sup>-1</sup></button>
+                        <button data-type="math_operator" data-text="acos">cos<sup>-1</sup></button>
+                        <button data-type="math_operator" data-text="atan">tan<sup>-1</sup></button>
+                        <button data-type="math_operator" data-text="sqrt">sqrt</button>
+                    </div>
+                    <div>
+                        <button data-text="^" data-type="operator" data-symbol="**">x<sup>y</sup></button>
+                        <button data-type="special_operator" identity="10X">10<sup>y</sup></button>
+                        <button>e<sup>x</sup></button>
+                        <button data-text="Mod" data-symbol="%" data-type="operator">Mod</button>
+                        <button>%</button>
+                    </div>
+                    <div>
+                        <button><sup>y</sup>sqrt<sub>x</sub></button>
+                        <button data-type="math_operator" math-attrib-name="log10" data-text="log">log</button>
+                        <button data-type="math_operator" math-attrib-name="log" data-text="ln">|n</button>
+                        <button data-type="special_operator" identity="FACTORIAL">n!</button>
+                        <button data-type="special_operator" identity="DIVIDE_ONE">1/x</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button data-type="action" action-type="CLEAR_ALL">CE</button>
+                        <button data-type="action" action-type="CLEAR">C</button>
+                        <button>&lArr;</button>
+                        <button data-text="/" data-type="operator">/</button>
+                    </div>
+                    <div>
+                        <button data-text="7" data-type="operand">7</button>
+                        <button data-text="8" data-type="operand">8</button>
+                        <button data-text="9" data-type="operand">9</button>
+                        <button data-text="*" data-type="operator">*</button>
+                    </div>
+                    <div>
+                        <button data-text="4" data-type="operand">4</button>
+                        <button data-text="5" data-type="operand">5</button>
+                        <button data-text="6" data-type="operand">6</button>
+                        <button data-text="-" data-type="operator">-</button>
+                    </div>
+                    <div>
+                        <button data-text="1" data-type="operand">1</button>
+                        <button data-text="2" data-type="operand">2</button>
+                        <button data-text="3" data-type="operand">3</button>
+                        <button data-text="+" data-type="operator">+</button>
+                    </div>
+                    <div>
+                        <button class="flex-2" data-text="0" data-type="operand">0</button>
+                        <button data-text="." data-type="operand">.</button>
+                        <button data-text="=" data-type="operator" id="equals"> = </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>

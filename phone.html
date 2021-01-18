@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="phone.css">
+</head>
+
+<body>
+	<section>
+		<div class="mains">
+
+
+			<div class="screen">
+				<div class="top">
+					<!-- <div class="net">Airtel</div> -->
+					<div class="nav">
+
+						<div class="speaker"></div>
+						<div class="camera"></div>
+					</div>
+
+				</div>
+				<div id="top">
+					<div id="netname">
+						<div>GLO LTE</div>
+						<div>Airtel</div>
+					</div>
+					<div>
+						<div style="color: white; margin-left: 70px;margin-top:1px;"> <i class="material-icons"
+								style="font-size:12px; margin-left: 10px; margin-top: -10px; ">network_cell</i> <i
+								class="material-icons" style="font-size:12px; margin-left: 1px; ">network_cell</i>
+							<!-- <div id="secondtime"></div> -->
+						</div>
+
+
+					</div>
+					<span style="font-size: 9px; color: white; margin-top: 4px;margin-left: 1px;">70%</span>
+					<div class="bord">
+						<div class="bar"></div>
+					</div>
+
+				</div>
+				<!-- i'l use padlock icon for this -->
+				<button onclick="showlock()" id="unlock">
+					<i class="material-icons" style="font-size:36px">lock_outline</i>
+					<p>Click to unlock</p>
+				</button>
+				<!-- <div class="Bottom"> -->
+				<!-- <div class="sides" style="display: flex; justify-content: space-around; margin-top: 250px;">
+						<div class="light"> <i class="material-icons"
+								style="color: lightgrey; font-size: 20px">highlight</i></div>
+
+						<div class="cam"><i class="material-icons" style="font-size:18px;color:lightgrey">camera_alt</i>
+						</div>
+					</div> -->
+
+
+				<!-- <div class="scroll"></div> -->
+
+				<!-- </div> -->
+				<div id="datebar">
+					<h2 id="condate"></h2>
+					<div class="datext">
+						<p id="jan">January 14</p>
+						<p id="pm">PM Thursday</p>
+					</div>
+					<div id="dateicon">
+						<i class="material-icons" style="font-size:28px;color:white">more_vert</i>
+						<i class="material-icons" style="font-size:28px;color:white">camera_alt</i>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="screen2">
+				<img src="wallpaper4.jpg" alt="">
+				<div class="ontop">
+					<div id="top2">
+						<div id="netname2">
+							<div>GLO LTE</div>
+							<div>Airtel</div>
+						</div>
+						<div>
+							<div style="color: white; margin-left: 70px;margin-top:1px;"> <i class="material-icons"
+									style="font-size:12px; margin-left: 10px; margin-top: -10px; ">network_cell</i> <i
+									class="material-icons" style="font-size:12px; margin-left: 1px; ">network_cell</i>
+								<!-- <div id="secondtime2"></div> -->
+							</div>
+
+
+						</div>
+						<span style="font-size: 9px; color: white; margin-top: 4px;margin-left: 1px;">70%</span>
+						<div class="bord">
+							<div class="bar"></div>
+						</div>
+
+					</div>
+					<div id="pins">
+						<h5 id="screenpas">Unlock the screen using password</h5>
+						<input type="password" id="showpin">
+						<button onclick="pinsdigits(1)"> 1 </button>
+						<button onclick="pinsdigits(2)"> 2</button>
+						<button onclick="pinsdigits(3)">3</button>
+						<button onclick="pinsdigits(4)">4</button>
+						<button onclick="pinsdigits(5)">5</button>
+						<button onclick="pinsdigits(6)">6</button>
+						<button onclick="pinsdigits(7)">7</button>
+						<button onclick="pinsdigits(8)">8</button>
+						<button onclick="pinsdigits(9)">9</button>
+						<button><i class="material-icons">arrow_back</i></button>
+						<button onclick="pinsdigits(0)">0</button>
+						<button onclick="dishomepage()"><i class="material-icons"
+								style="font-size:32px">check</i></button>
+
+						<div id="footer">
+							<p>Emergency Call</p>
+							<p>Cancel</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="screen3">
+				<div id="top3">
+					<div id="netname2">
+						<div>GLO LTE</div>
+						<div>Airtel</div>
+					</div>
+					<div>
+						<div id="secondtime"></div>
+						<div style="color: white; margin-left: 70px;margin-top:1px;"> <i class="material-icons"
+								style="font-size:12px; margin-left: 10px; margin-top: -10px; ">network_cell</i> <i
+								class="material-icons" style="font-size:12px; margin-left: 1px; ">network_cell</i>
+							<div id="secondtime2"></div>
+						</div>
+
+
+					</div>
+					<span style="font-size: 9px; color: white; margin-top: 4px;margin-left: 1px;">70%</span>
+					<div class="bord">
+						<div class="bar"></div>
+					</div>
+
+				</div>
+				<input type="search" placeholder="Search Apps or Web" id="search">
+
+				<div id="hometime"></div>
+
+				<div id="apps">
+					<div id="frggle">
+						<div id="google">
+							<img src="goicon.png" alt="">
+						</div>
+						<p>Google</p>
+					</div>
+
+				</div>
+
+				<div class="dottednav">
+					<div class="dotbefore"></div>
+					<div class="dot"></div>
+					<div class="dotafter"></div>
+				</div>
+				<div class="app2">
+					<img src="callicon.jpg" alt="" onclick="showcallscreen()">
+					<img src="msgicon.jpg" alt="">
+					<img src="cameraicon.jpg" alt="">
+					<img src="chromeicon.jpg" alt="">
+				</div>
+			</div>
+
+
+			
+
+			<div class="screen4">
+				<div id="contacts">
+
+
+					<nav id="callnav">
+						<div id="top4">
+							<div id="netname3">
+								<div>GLO LTE</div>
+								<div>Airtel</div>
+							</div>
+							<div>
+								
+								<div style="color: black; margin-left: 70px;margin-top:1px;"> <i class="material-icons"
+										style="font-size:12px; margin-left: 10px; margin-top: -10px; ">network_cell</i>
+									<i class="material-icons"
+										style="font-size:12px; margin-left: 1px; ">network_cell</i>
+									<div id="secondtime2"></div>
+								</div>
+
+
+							</div>
+							<span style="font-size: 9px; color: black; margin-top: 4px;margin-left: 1px;">70%</span>
+							<div class="bord2">
+								<div class="bar2"></div>
+							</div>
+
+
+						</div>
+						<button id="butphone">Phone</button>
+						<button id="butcon">Contacts</button>
+					</nav>
+					<div id="allcalls">
+						<p id="allca">All calls</p>
+						<p id="switch">Switch</p>
+					</div>
+					<div id="contacts">
+						<div class="contact">
+							<p class="pn1">08123456789 &nbsp; &nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
+									class="material-icons">call</i> </p>
+							<p class="pnum"> <i class="material-icons" style="transform: rotate(50deg); font-size: 13px; color: green">arrow_upward</i><i class="material-icons" style="font-size:14px;color:lightgray;margin-left:-2px">sim_card</i> &nbsp; Incoming51s</p>
+
+						</div>
+					</div>
+					<div id="contacts">
+						<div class="contact">
+							<p class="pn1">08123456789 &nbsp; &nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span> <i
+									class="material-icons">call</i></p>
+							<p class="pnum"><i class="material-icons" style="transform: rotate(50deg); font-size: 13px; color: green">arrow_upward</i><i class="material-icons" style="font-size:14px;color:lightgray;margin-left:-2px">sim_card</i>  &nbsp; Incoming51s</p>
+
+						</div>
+					</div>
+					<div id="contacts">
+						<div class="contact">
+							<p class="pn1">08123456789 &nbsp; &nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span> <i
+									class="material-icons">call</i></p>
+							<p class="pnum"><i class="material-icons" style="font-size:13px;color:red;transform: rotate(50deg);">arrow_upward</i><i class="material-icons" style="font-size:14px;color:lightgray;margin-left:-2px">sim_card</i>  &nbsp; Incoming51s</p>
+
+						</div>
+					</div>
+					<div id="contacts">
+						<div class="contact">
+							<p class="pn1">08123456789 &nbsp; &nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
+									class="material-icons">call</i> </p>
+							<p class="pnum"><i class="material-icons" style="transform: rotate(50deg); font-size: 13px; color: green">arrow_upward</i><i class="material-icons" style="font-size:14px;color:lightgray;margin-left:-2px">sim_card</i>  &nbsp; Incoming51s</p>
+
+						</div>
+					</div>
+					<div id="contacts">
+						<div class="contact">
+							<p class="pn1">08123456789 &nbsp; &nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
+									class="material-icons">call</i> </p>
+							<p class="pnum"><i class="material-icons" style="font-size:13px;color:red;transform: rotate(50deg);">arrow_upward</i> <i class="material-icons" style="font-size:14px;color:lightgray;margin-left:-2px">sim_card</i> &nbsp; Incoming51s</p>
+
+						</div>
+					</div>
+					<div id="contacts">
+						<div class="contact">
+							<p class="pn1">08123456789 &nbsp; &nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span> <i
+									class="material-icons">call</i></p>
+							<p class="pnum"><i class="material-icons" style="transform: rotate(50deg); font-size: 13px; color: green">arrow_upward</i><i class="material-icons" style="font-size:14px;color:lightgray;margin-left:-2px">sim_card</i>  &nbsp; Incoming51s</p>
+
+						</div>
+					</div>
+					<div id="contacts">
+						<div class="contact">
+							<p class="pn1">08123456789 &nbsp; &nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
+									class="material-icons">call</i> </p>
+							<p class="pnum"><i class="material-icons" style="font-size:13px;color:red;transform: rotate(50deg);">arrow_upward</i> &nbsp; Incoming51s</p>
+
+						</div>
+					</div>
+		
+
+					<div class="call-log-nav">
+						<button> <i class="material-icons">star_border</i>
+							favorites</button>
+						<button id="frdial" onclick="dialpad()">Keyboard</button>
+						<button><i class="material-icons">more_horiz</i>
+							More</button>
+					</div>
+					<div id="dialpad">
+						<input type="number" id="diinp">
+						<button onclick="inputdial(1)">1 <p>oo</p></button>
+						<button onclick="inputdial(2)">2 <p>ABC</p></button>
+						<button>3 <p>DEF</p></button>
+						<button>4 <p>GHI</p></button>
+						<button>5 <p>JKL</p></button>
+						<button>6 <p>MNO</p></button>
+						<button>7 <p>PQRS</p></button>
+						<button>8 <p>TUV</p></button>
+						<button>9 <p>WXYZ</p></button>
+						<button style="font-size: 25px;">* </button>
+						<button id="lastcont">0 <p>+</p></button>
+						<button>#</button>
+						<div id="sims">
+							<div>favorites</div>
+							<div id="glo">Glo NG</div>
+							<div id="airtel"> Airtel</div>
+							<div><i class="material-icons" style="font-size:30px">more_horiz</i>
+								<p style="margin-top: -20px;font-size: 10px; color: gray;">More</p>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+
+				<!-- <h2>Designed by Kawthar &copy;</h2> -->
+			</div>
+
+			<div class="nav-bot">
+				<h5>GIONEE</h5>
+			</div>
+		</div>
+		<div class="side">
+			<!-- <div class="silent"></div> -->
+			<div class="inc"></div>
+			<div class="dec"></div>
+			<div onclick="openlock()" class="power"></div>
+		</div>
+		<!-- <div class="power" onclick="openlock()"></div> -->
+
+	</section>
+</body>
+
+</html>
+<script src="phone.js"></script>

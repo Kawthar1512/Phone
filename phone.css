@@ -1,0 +1,745 @@
+section{display: flex;}
+.mains{
+			/* display: flex; */
+			margin-left: 40%;
+			margin-top: 2%;
+			width: 261px;
+			height: 509px;
+			border: 4px solid black;
+			border-radius: 32px;
+			/* background-color: black; */
+		}
+		.screen{
+			width: 251px;
+			height: 500px;
+			border: 1.8px solid black;
+			border-radius: 30px;
+			background: black;
+			transition: 3s;
+			margin-left: 1px;
+			margin-top: 0px;
+			/* display: none; */
+			
+			/* background-image: url(wallpaper4.jpg); */
+			padding: 0;
+			/* margin-left: px; */
+			/* background-clip: border-box; */
+			/* background-size: cover; */
+			background-repeat: no-repeat;
+			background-size: cover;
+			/* box-shadow: 1px 1px 1px  whitesmoke; */
+		}
+		.screen2{
+			/* background: rgba(241, 241, 241, 0.315); */
+			width: 253px;
+			height: 501px;
+			border: 1.8px solid black;
+			padding-top: 2px;
+			display: none;
+			border-radius: 30px;
+			transition: 2s;
+			/* transition-delay: 5s; */
+			/* opacity: 0.5; */
+			/* z-index: -300; */
+			
+			/* background: black; */
+
+		}
+		.screen2 img{
+			width: 251px;
+			height: 478px;
+			border-radius: 30px 30px 1px 1px;
+			margin-top: -3px;
+			margin-left: -1px;
+			filter: blur(3px);
+		}
+		.screen2 .ontop{
+			position: relative;
+			top: -96%;
+		}
+		.screen2 button{
+			border: 2px solid white;
+			border-radius: 80%;
+			font-size: 23px;
+			background: transparent;
+			/* background: rgba(255, 255, 255, 0.589); */
+			/* background: rgba(211, 211, 211, 0.87); */
+			/* padding: 20px; */
+			margin-left: 23px;
+			margin-top: 17px;
+			margin-bottom: 9px;
+			width: 50px;
+			height: 50px;
+			color: white;
+			/* display: flex; */
+			flex-wrap: wrap;
+			outline: 0;
+			text-align: center;
+			/* background: brown; */
+			color: white;
+			transition: 1s;
+			box-shadow: 1px 1px 8px white;
+			cursor: pointer;
+			/* z-index: 400; */
+		}
+		/* .screen2 button:hover{
+		
+		} */
+		.screen2 button:hover{
+			background:whitesmoke;
+			color: black;
+			transition: 0.5s;
+		}
+		#showpin{
+			background: transparent;
+			/* padding-left: 50%; */
+		width: 100%;
+		height: 15px;
+			text-align: center;
+			font-size: 35px;
+			border: none;
+			color: white;
+			margin-top: 10px;
+			/* border: 1px solid red; */
+			/* tex */
+		}
+		#pins{
+			display: none;
+			color: white;
+			/* opacity: 0.5; */
+			/* z-index: 400; */
+		}
+		#pins h5{
+			
+			animation-name: move;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			font-size: 14px;
+			margin-top: 40px;
+		}
+		@keyframes move{
+			0%{
+				margin-left: 5px;
+			}
+			20%{
+				margin-left: 10px;
+			}
+			50%{
+				margin-left: 15px;
+			}
+			70%{
+					margin-left: 21px;
+				}
+				80%{
+					margin-left: 24px;
+				}
+				90%{
+					margin-left: 30px;
+				}
+				100%{
+					margin-left: 33px;
+				}
+			
+		}
+		.nav{
+			border: 1px solid black;
+			background: black;
+			width: 243px;
+			height: 20px;
+			margin: -1.5px auto;
+			border-top-left-radius: 32px;
+			border-top-right-radius: 32px; 
+			display: flex;
+			justify-content: center;
+		}
+		#top{
+			margin-left: 100px;
+			display: flex;
+			display: none;
+		}
+		#top2{
+			margin-left: 100px;
+			display: flex;
+			display: none;
+		}
+		#top3{
+			margin-left: 100px;
+			display: flex;
+			display: none;
+		}
+		#top4{
+			margin-left: 100px;
+			margin-bottom:8px;
+			display: flex;
+			color: black;
+			/* background: red; */
+			/* display: none; */
+			/* #top3{
+				margin-left: 100px;
+				display: flex;
+				display: none;
+			} */
+		}
+		.nav-bot{
+			border: 1px solid black;
+			background: black;
+			width: 249px;
+			height: 22px;
+			margin: -21px auto;
+			border-bottom-left-radius: 32px;
+			border-bottom-right-radius: 32px; 
+			display: flex;
+			justify-content: center;
+			/* z-index: 400; */
+		}
+		.nav-bot h5{
+			font-weight: 600;
+			color: rgba(128, 128, 128, 0.61);
+			font-family: arial;
+			margin-top: 2px;
+		}
+		.camera{
+			border: 2px solid grey;
+			width: 7px;
+			height: 7px;
+			background: rgba(221, 220, 220, 0.815);
+			border-radius: 100%;
+			margin-left: 10px;
+			margin-top: 3px;
+
+		}
+		.speaker{
+			width: 40px;
+			height: 5px;
+			border: 1px solid grey;
+			border-radius: 10px;
+			margin-top: 3px;
+			
+		}
+		.side{
+			margin-top: 70px;
+		}
+		.silent{
+			width: 1px;
+			height: 14px;
+			border: 1px solid black;
+			background: black;
+			margin-top: 40px;
+		}
+		.inc{
+			width: 4px;
+			height: 25px;
+			border: 1px solid black;
+			background: black;
+			margin-top: 8px;
+			/* border-radius: 48% 48%; */
+			
+			/* margin-left: -3px; */
+			/* border-radius: 500px; */
+			
+		}
+		.dec{
+			width: 4px;
+			height: 25px;
+			border: 1px solid black;
+			background: black;
+			margin-top: 2px;
+		
+			/* margin-left: -1px; */
+			
+
+		}
+		.lk{
+			margin: 10px 0 0 50px;
+			display: flex;
+		}
+		.lk p{
+			padding-left: 8px;
+		}
+		h1{
+			font-size: 50px;
+			margin-top:2px;
+			padding-left: 50px;
+			padding-top: 10px;
+		}
+		.power{
+			width: 4px;
+			height: 34px;
+			border: 1px solid black;
+			background: black;
+			margin-top: 15px;
+			/* border-radius: 42%; */
+			/* margin-left: px; */
+			
+		}
+		.power:active{
+			width: 1px;
+			height: 34px;
+			/* border: 1px solid black;
+			background: black;
+			margin-top: 15px; */
+			/* border-radius: 42%; */
+			/* margin-left: px; */
+			
+		}
+		.scroll{
+			width: 77px;
+			height: 1px;
+			border: 1.5px solid white;
+			background: rgba(255,255,255, 0.822);
+			border-radius: 90px;
+			margin: 37px auto;
+
+		}
+		.torch{
+			width: 20px;
+			height: 20px;
+			border: 1px solid red;
+		}
+		.top{
+			 display: flex;
+		}
+		#netname{
+			font-size: 9px;
+			color: white;
+			width: 50px;
+			margin-left: -89px;
+			margin-right: 32px;
+			padding-top: 2px;
+			/* display: none; */
+		}
+		#netname2{
+			font-size: 9px;
+			color: white;
+			width: 50px;
+			margin-left: -89px;
+			margin-right: 32px;
+			padding-top: 2px;
+			/* display: none; */
+		}
+		#netname3{
+			font-size: 9px;
+			color: black;
+			width: 50px;
+			margin-left: -89px;
+			margin-right: 32px;
+			padding-top: 2px;
+			/* display: none; */
+		}
+		.net{
+			color: white;
+			font-size: 12px;
+			position: relative;
+			left: 20px;
+			top: 6px;
+		}
+		.bord{
+			width: 15px;
+			height: 8px;
+			border: 1px solid white;
+			border-radius: 1px;
+			margin-top:6px;
+			margin-left: 4px;
+			margin-right: 5px;
+			/* position: relative;
+			bottom: 10px;
+			right: 13px; */
+		}
+		.bord2{
+			width: 15px;
+			height: 8px;
+			border: 1px solid black;
+			border-radius: 1px;
+			margin-top:6px;
+			margin-left: 1px;
+			margin-right: 5px;
+			/* position: relative;
+			bottom: 10px;
+			right: 13px; */
+		}
+		.bar{
+			width: 9px;
+			height: 4px;
+			background: white;
+			border: 1px solid white;
+			border-radius: 1px;
+			margin-top: 1px;
+
+		}
+		.bar2{
+			width: 9px;
+			height: 4px;
+			background: black;
+			border: 1px solid black;
+			border-radius: 1px;
+			margin-top: 1px;
+
+		}
+		.light{
+			width: 30px;
+			height: 30px;
+			border: 1px hidden rgba(230,227,227, 0.480);
+			border-radius: 100px;
+			background: rgba(230,227,227, 0.480);
+			padding: 4px;
+			position: relative;
+			top: 30px;
+		}
+		.cam{
+			width: 30px;
+			height: 30px;
+			border: 1px hidden rgba(230,227,227, 0.480);
+			border-radius: 100px;
+			background: rgba(230,227,227, 0.480);
+			padding: 6px;
+			margin-left: 70px;
+			top: 30px;
+			position: relative;
+		}
+		.service{
+			position: relative;
+			right: 25px;
+			top: 5px;
+		}
+		.fs{
+			width: 3px;
+			height: 5px;
+			border: 1px solid white;
+			background: white;
+			display: flex;
+
+		}
+		.ss{
+			width: 3px;
+			height: 8px;
+			border: 1px solid white;
+			background: white;
+			margin-left: 7px;
+		}
+#datebar{
+	/* width: ; */
+	background: linear-gradient(rgba(211, 211, 211, 0.774), rgba(0, 0, 0, 0.726),rgba(211, 211, 211, 0.774));
+	
+	display: flex;
+	color: white;
+	margin-top: 130%;
+	height: 50px;
+	display: none;
+
+	/* padding-top: -20px; */
+}
+#datebar h2{
+	margin-left: 3px;
+	margin-top: 7px;
+}
+#datebar p{
+	font-size: 11px;
+	margin-top: -11px;
+}
+.datext{
+	margin-top: 20px;
+	margin-left: 5px;
+}
+#pm{
+	margin-top: -9px;
+}
+#dateicon{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+#secondtime{
+	font-size: 6px;
+}
+#secondtime2{
+	font-size: 6px;
+}
+
+#screen3{
+	/* background: rgba(231, 76, 76, 0.315); */
+	width: 253px;
+	background-image: url(wallpaper6.jpg);
+	height: 501px;
+	border: 1.8px solid black;
+	/* padding-top: 100px; */
+	display: none;
+	border-radius: 30px;
+	/* opacity: 0.5; */
+	/* z-index: -300; */
+	
+	/* background: black; */
+
+}
+#unlock{
+	margin-left: 85px;
+	/* margin-top:13px; */
+	display: none;
+	animation-name:hover;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	border: none;
+	outline: 0;
+	color: black;
+	font-size: 13px;
+	background: transparent;
+
+}
+@keyframes hover{
+	
+
+	0%{
+		margin-left: 85px;
+	}
+	50%{
+		margin-left: 75px;
+	}
+	
+
+		100%{
+			margin-left: 100px;
+		}
+	
+}
+#footer{
+	display: flex;
+	justify-content: space-around;
+}
+#search{
+background: rgb(230, 227, 227);
+border: 1px solid white;
+font-size: 11px;
+text-align: center;
+margin: -20px 0 0 50px;
+border-radius: 4px;
+width: 170px;
+padding: 4px;
+}
+#google{
+	border: 1px solid white;
+	background: rgba(255, 255, 255, 0.719);
+	border-radius: 5px;
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	margin-top: 160px;
+}
+#frggle{
+	margin-top: 100px;
+	color: white;
+	font-size: 12px;
+}
+#google img{
+	width: 27px;
+	height: 27px;
+	border-radius: 50%;
+}
+.dot{
+	width: 8px;
+	height: 8px;
+	background: white;
+	border-radius: 50%;
+	margin-left: -80px;
+	margin-right: -80px;
+	/* margin: auto ; */
+}
+.dotbefore{
+	content: '';
+	width: 6px; 
+	height: 6px;
+	background: white;
+	border-radius: 50%;
+	margin: auto ;
+}
+.dotafter{
+	content: '';
+	width: 6px; 
+	height: 6px;
+	background: white;
+	border-radius: 50%;
+	margin: auto ;
+}
+.dottednav{
+	margin: 70px 0 0 20px ;
+	display: flex;
+}
+.app2 img{
+	width: 40px;
+	height: 40px;
+	margin-left: 14px;
+	margin-top: 10px;
+}
+#hometime{
+	font-size: 45px;
+	color: white;
+	margin-left: 30%;
+	/* margin: auto auto; */
+	font-family: monospace;
+}
+#callnav{
+	background-color: transparent;
+	/* position: sticky; */
+	/* top: 0; */
+	border-bottom: 1px solid gray
+
+}
+.screen4{
+	/* background: black; */
+	/* border: 1px solid blue; */
+	width: 253px;
+	/* background-image: url(wallpaper6.jpg); */
+	height: 501px;
+	border: 1.8px solid black;
+	padding-top:3px;
+	display: none;
+	border-radius: 30px;
+
+}
+#butphone{
+	border: none;
+	background: transparent;
+	color: skyblue;
+	margin-right: 120px;
+	outline: 0;
+	/* margin-top: -200px; */
+}
+#butphone:active{
+	border-bottom: 2px solid skyblue;
+}
+#butcon{
+	border: none;
+	background: transparent;
+	color: lightgray;
+	outline: 0;
+	/* margin-right: 100px; */
+	/* margin-top: -200px; */
+}
+#allcalls{
+	display: flex;
+	/* justify-content: space-around; */
+	/* color: white; */
+	font-size: 12px;
+	padding-left: 15px;
+	margin-top: 5px;
+	/* padding-bottom: -20px; */
+	border-bottom: 1px solid lightgray;
+}
+#allca{
+	margin-right: 150px;
+}
+#switch{
+	color: gold
+}
+#contacts{
+	padding-left: 1px;
+}
+.pnum{
+	margin-top: -12px;
+	color: gray;
+	font-size: 11px;
+	margin-left: -20px;
+}
+.contact{
+	padding-left: 4px;
+}
+.contact span{
+	font-size: 12px;
+	color: gray
+	/* margin-top: 100px; */
+}
+.contact i{
+	font-size: 16px;
+	color:rgb(2, 156, 79) ;
+	margin-top: 5px;
+	margin-left: 24px;
+}
+#contacts{
+	margin-top: -2px;
+}
+.call-log-nav{
+	position: fixed;
+	top:71%;
+	left: 40.5%;
+	border: 1px solid lightgray;
+	box-shadow: 1px 1px 3px lightgray;
+	background: white;
+	border-radius: 5px;
+	text-align: center;
+	height: 40px;
+	width: 240px;
+	/* padding-top:  12px;  */
+
+}
+.call-log-nav button{
+	border: none;
+	background: transparent;
+	color: gray;
+
+}
+#dialpad{
+	border: 1px solid gray;
+	width: 252px;
+	background: white;
+	display: none;
+	position: absolute;
+	top: 189px
+	/* margin-top: -300px; */
+	/* text-align: center; */
+
+
+}
+#dialpad input{
+	width: 100%;
+	height: 30px;
+	color: gray;
+	text-align: center;
+	/* display: */
+}
+#dialpad button{
+	/* display: flex; */
+	flex-wrap: wrap;
+	border: none;
+	background: white;
+	font-size: 23px;
+	width: 45px;
+	height: 45px;
+	transition: 5s;
+	color: rgb(65, 65, 65);
+	text-align: center;
+	margin-left: 25px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+#dialpad button p{
+	margin-top: -4px;
+	font-weight: lighter;
+	font-size: 11px;
+	color: gray
+
+}
+#lastcont{
+	margin-top: 100px;
+}
+#glo{
+	background: rgb(2, 156, 79);
+	color: white;
+	border-radius: 20px 0 0 20px;
+	border:none;
+	/* width: 50px; */
+	/* height: 22px; */
+	padding: 10px;
+	font-size: 11px;
+}
+#airtel{
+	background: rgb(2, 156, 79);
+	color: white;
+	border-radius: 0 20px 20px 0;
+	border-left: 1px solid gray;
+	/* border:none; */
+	/* width: 50px; */
+	/* height: 22px; */
+	padding: 10px;
+	font-size: 11px;
+}
+#sims{
+	display: flex;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.5.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            background: red;
+            padding: 40px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="display">eafrd</div>
+    <button id="btn">hgffv</button>
+    <button class="btn">first</button>
+    <button class="btn">second</button>
+    <button class="btn">third</button>
+</body>
+</html>
+<script>
+    // $(document).ready(function(){
+    //     alert('JQUERY')
+    // })
+    // $(function(){
+    //     alert('safsd')
+    // })
+    // to get id: 
+    // $('#display')
+    //to change the html i.e innerHtml
+    // $(function(){
+    //     $('#display').html('hellooo')
+    // })
+    $(function(){
+        $('#btn').click(function(){
+            let div = $('#display')
+            div.append('<input type= text>')
+            // JQUERY UI 
+            // $('#display').effect('shake')
+            // alert('buttonn')
+            // $(this).text('Changed!')
+            // console.log($(this).toggle('#btn'))
+            // we can write css
+            // console.log($(this).css({
+            //     'background': "yellow",
+            //     'padding': "50px",
+            //     'border': "2px solid green"
+            // }))
+        // $(this).css({
+        //         'background': "yellow",
+        //         'padding': "50px",
+        //         'border': "none",
+        //         'border-radius': '50%',
+        //         'color': 'black',
+        //         'font-size': '50px',
+        //         'transition': "2s",
+        //         'outline': 'none'
+        //     })
+            // we can set atribute 
+        //    var ree= console.log($(this).attr('class','real'));
+        //     console.log(ree)
+
+            // we can get elements with th esame class names: 
+            // $('.btn').on('click', function(){
+            //     var id = $(this).text()
+            //     console.log(id)
+            // })
+        })
+        // to get a particular element in a tag
+    })
+    
+
+   // for value
+//    $(function(){
+//         $('#display').val('hellooo')
+//     })
+// document
+</script>

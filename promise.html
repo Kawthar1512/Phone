@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+   
+    // let promise = new Promise((resolve,reject) =>{
+    //     setTimeout(()=>{
+    //         return resolve('Working fine')
+    //     },3000)
+
+    // })
+    // promise.then((success) =>{
+    //     alert(success)
+    // },error()=>){
+    //     alert(error)
+    // }
+    // let promise = new Promise((resolve, reject)=>{
+    //     setTimeout(()=>{
+    //         return reject ('everything is not ok')
+    //     },3000)
+    // })
+    // promise.then(success =>{
+    //     alert(success)
+    // },error=>{
+    //     alert(error)
+    // })
+    async function a() {
+        // let a = await fetch('https://jsonplace.typicode.com/photos/1');
+        var a = fetch('https://jsonplaceholder.typicode.com/photos/1')
+            .then(response => response.json())
+            .then(data => {
+                title.innerText = data.title;
+                img.src = data.url
+                console
+            })
+
+
+        // a.then(img=> console.log())
+
+        //    console.log(234567)
+    }
+</script>

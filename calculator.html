@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="forbtns">
+        <button class="navbtn" onclick="toscientific()">Standard</button>
+        <button class="navbtn">Scientific</button>
+    </div>
+    <div id="upper">
+
+        <div id="first">
+            <p id="first-value"></p>
+        </div>
+
+        <div id="scnd">
+            <p id="scnd-value"></p></div>
+    </div>
+    <main>
+        <section>
+            <div class="btnmethods">
+                <button class="show" id="deg">Deg</button>
+                <button class="show">(</button>
+                <button class="show">)</button>
+                <button class="show">F-E</button>
+                <button>M</button>
+            </div>
+            <div class="btnmethods">
+                <button class="show"> &pi;</button>
+                <button class="show"> sin</button>
+                <button class="show">cos</button>
+                <button class="show">tan</button>
+                <button>&plusmn;</button>
+
+            </div>
+            <div class="btnmethods">
+                <button class="show"> x <sup>2</sup></button>
+                <button class="show">sin <sup>-1</sup></button>
+                <button class="show">cos <sup>-1</sup></button>
+                <button class="show">tan<sup>-1</sup></button>
+                <button>&Sqrt;</button>
+            </div>
+            <div class="btnmethods">
+                <button class="show"> x <sup>y</sup></button>
+                <button class="show">10<sup>y</sup></button>
+                <button class="show">e<sup>x</sup></button>
+                <button class="show">Mod</button>
+                <button>%</button>
+            </div>
+            <div class="btnmethods">
+                <button class="show"><sup>y</sup>&Sqrt;<sub>x</sub></button>
+                <button class="show">log</button>
+                <button class="show">|n</button>
+                <button class="show">n!</button>
+                <button class="show">1/x</button>
+            </div>
+        </section>
+        <section>
+            <div class="secondside">
+                <div class="btnmethods2">
+                    <button class="operator" id="backspace">CE</button>
+                    <button class="operator" id="clear">C</button>
+                    <button class="operator" id="cancel">&#8272;</button>
+                    <button class="operator" id="/">&#247;</button>
+                </div>
+                <div class="btnmethods2">
+                    <button class="number" id="7">7</button>
+                    <button class="number" id="8">8</button>
+                    <button class="number" id="9">9</button>
+                    <button class="operator" id="*">x</button>
+                </div>
+                <div class="btnmethods2">
+                    <button class="number" id="4">4</button>
+                    <button class="number" id="5">5</button>
+                    <button class="number" id="6">6</button>
+                    <button class="operator" id="-">-</button>
+                </div>
+                <div class="btnmethods2">
+                    <button class="number" id="1">1</button>
+                    <button class="number" id="2">2</button>
+                    <button class="number" id="3">3</button>
+                    <button class="operator" id="+">+</button>
+                </div>
+                <div class="btnmethods2">
+                    <button class="number" id="0" style="width: 150px;">0</button>
+                    <button id=".">.</button>
+                    <button style="background: rgba(91, 187, 219, 0.63); color: white;" id="=">=</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="mycalculator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: skyblue;
+    position: sticky;
+    top: 5px;
+    padding: 8px;
+}
+nav a{
+    text-decoration: none;
+
+}
+nav a:first-child{
+    color: blue;
+    font-size: 30px;
+    font-family: Arial;
+}
+#create{
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(75, 182, 224);
+    font-weight: bold;
+    font-family: sans-serif;
+}

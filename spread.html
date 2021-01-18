@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+//     // var a = [1,2,3,4,5]
+//     // var b = [6,7,8,9];
+//     // var c = a.concat(b)
+//     // console.log(c)
+//     // instead of writting multiple parameters in a function 
+//     function example(...detail){
+//         console.log(detail)
+//     }
+//     example('teslim', 10, 'kaw@yahoo.com')
+//     // using spread to join two array together
+//     var a = [1, 2, 3, 4, 5]
+//     var b = [6, 7, 8, 9]
+//     var c = [...a, ...b]
+//     console.log(c)
+// // using spread operator to copy an array inside a different in an entire memory location 
+// var a = [1,2,3,4,5]
+// var b = [...a]
+// a[0] = 20;
+// var c = [...a, ...b]
+// console.log(c) 
+// // using spread operator on object 
+// var myobject = {
+//     name: 'teslim',
+//     position: "Software Engineer",
+//     Phone: 08098239000
+// }
+// var newobj = {...myobject}
+// var bb = {...myobject, ...newobj}
+// console.log(bb)
+
+// // DATA DESTRUCTION
+// var a = [1,2,3,4,5]
+// var [b,c,...d] = a
+// console.log(d)
+
+// var x = {
+//     name: "KAwthar",
+//     age: 29,
+//     email: "kkk@yahoo.com"
+// }
+// var {age, ...g}=x
+// console.log(age,g)
+function practice(...explain){
+    console.log(explain[2])
+}
+practice('this is me ', 5, 2)
+
+myarr= ['teslim', 'kawthar', 'tobi']
+newarr =[...myarr]
+myarr[1] = 'taye'
+latearr = [...myarr, ...newarr]
+console.log(latearr);
+
+
+</script>
+
+</html>

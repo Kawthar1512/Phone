@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment.js">
+    <title>Document</title>
+    <style>
+        
+
+        input {
+            padding: 10px;
+            font-size: 20px;
+            color: salmon;
+            border-radius: 20px;
+            border: 2px solid black;
+            outline: none;
+            font-weight: bold;
+           
+        }
+        input::placeholder{
+            font-size: 14px;
+            font-style: italic;
+            color: rgba(128, 128, 128, 0.705);
+            font-weight: lighter;
+
+        }
+        input:focus{
+            box-shadow: 0px 0px 5px salmon;
+            border: 2px solid gray;
+        }
+        
+
+        button {
+            background: lightcoral;
+            color: white;
+            padding: 15px;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:active {
+            background: rgba(240, 128, 128, 0.507);
+            color: white;
+            padding: 20px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+        }
+        
+
+        h1 {
+            color: salmon;
+            border: 1px dashed black;
+            width: 300px;
+            height: 50px;
+            padding: 6px;
+            
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <div>
+       
+            <input type="text" id="first" placeholder="Input Number">
+        </label>
+        
+            <input type="text" id="second" placeholder="Operator(- , + , /, %, ^)">
+        </label>
+       
+            <input type="text" id="third" placeholder="Input Number">
+        </label>
+
+        <button onclick="homework()">Calculate</button>
+        <h1 id="myres">Result: </h1>
+
+  
+    </div>
+    <script src="assignment.js"></script>
+</body>
+
+</html>

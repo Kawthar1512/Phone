@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  div {
+    display: flex;
+  }
+  body{
+    background: black;
+  }
+  
+  
+  #main {
+    margin-top: 16px;
+    flex-direction: column;
+    width: 500px;
+   
+    margin: auto;
+    
+  }
+  
+  #result_container {
+    padding: 17px;
+    /* width: 60%; */
+    flex-direction: column;
+    align-items: flex-end;
+    background: rgb(239, 239, 239);
+    margin-bottom: 8px;
+    background: rgba(26, 26, 26, 0.849);
+    color: white;
+    font-size: 30px;
+    border-top: 2px solid rgb(40, 172, 224);
+  }
+  #final{
+    color: lightgray;
+  }
+  
+  #operation_container {
+    margin-top: 8px;
+    width: 100%;
+  }
+  
+  #operation_container > div {
+    flex-direction: column;
+    width: 400px;
+  }
+  
+  #operation_container > div:first-child {
+    margin-right: 8px;
+  }
+  
+  #operation_container > div:last-child {
+    margin-left: 8px;
+  }
+  
+  #operation_container > div > div {
+    justify-content: space-between;
+  }
+  
+  #operation_container > div > div button {
+    flex: 1;
+    margin: 4px;
+    height: 40px;
+  }
+  
+  #operation_container > div > div button:last-of-type {
+    margin-right: 0;
+  }
+  
+  #operation_container > div > div button:first-of-type {
+    margin-left: 0;
+  }
+  
+  #operation_container > div > div button.undone {
+    border: 1px solid whitesmoke;
+  }
+  
+  .flex-2 {
+    flex: 2 !important;
+  }
+  button{
+    background: rgba(39, 39, 39, 0.815);
+    color: whitesmoke;
+    border: none;
+    font-size: 18px;
+    outline: 0;
+    /* padding: 10px; */
+    /* height: 40px; */
+  
+    
+  }
+  h2{
+    color: white;
+  }
+  #equals{
+    background: rgb(40, 172, 224);
+    font-weight: bold;
+  }
+@media screen and (max-width: 500px){
+  #main {
+    margin-top: 16px;
+    flex-direction: column;
+    /* width: 700px; */
+    margin: auto;
+    
+  }
+}
+  

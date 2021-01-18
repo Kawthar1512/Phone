@@ -1,0 +1,91 @@
+body{
+    background: black;
+   
+
+}
+.forbtns{
+    margin-left: 285px;
+}
+.navbtn{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    outline: none;
+
+   
+}
+#upper{
+    border-top: 2px solid rgba(91, 187, 219, 0.63);
+    height: 180px;
+    width: 56%;
+    margin: 15px auto;
+    background: rgba(48, 48, 48, 0.945);
+    
+}
+#first{
+    color: lightgray;
+    text-align: right;
+    /* /* padding-top: 13px; */
+    padding-right: 14px; 
+    font-size: 24px;
+}
+
+#scnd{
+    color: white;
+    text-align: right;
+    padding-top: 1px;
+    padding-right: 19px;
+    font-size: 74px;
+}
+.btnmethods{ 
+   /* margin: auto auto;  */
+   /* text-align: center; */
+   margin-left: 290px;
+   margin-right: 38px;
+}
+/* #btnmethods{
+    margin-left:379px ;
+} */
+/* .show{
+    display: none;
+} */
+.btnmethods button,.btnmethods2 button{
+    /* display: block; */
+    background: rgba(48, 48, 48, 0.945);
+    color: rgba(211, 211, 211, 0.808);
+    /* padding: 25px; */
+  
+    border: none;
+    width: 75px;
+    height: 70px;
+    font-size: 23px;
+    margin-bottom: 5px;
+    outline: none;
+}
+.btnmethods button:hover,.btnmethods2 button:hover{
+    background: rgba(207, 207, 207, 0.521);
+
+}
+.btnmethods button:active{
+    background: white;
+    color: black;
+
+}
+.btnmethods2 button:active{
+    background: white;
+    color: black;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number{
+    font-size: 24px;
+    color: white;
+  font-family: Arial Narrow;
+}
+/* .show{
+    display: none; 
+}  */

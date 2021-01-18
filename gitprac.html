@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="show" width="60px" style="text-align: center;">
+    <button id="b1" onclick="disnum(1)">1</button>
+    <button onclick="disnum(2)">2</button>
+    <!-- <button>2</button> -->
+</body>
+
+</html>
+<script>
+
+var inp = document.getElementById('show')
+// var b11 = document.getElementById('b1')
+
+    function disnum(nums) {
+        inp.value == ''
+            inp.value += nums
+            console.log(nums)
+            // return
+        if(inp.value.length > 22){
+            inp.style.fontSize="17px"
+            // return
+        }
+    }
+</script>
