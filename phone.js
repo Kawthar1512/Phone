@@ -148,6 +148,8 @@ function dishomepage(){
             // screenpas.style.display="inline"
 
             screenpas.innerHTML= "Wrong password, please try again!"
+            screenpas.style.color="red"
+
             console.log(screenpas)
             inp.value=''
             
