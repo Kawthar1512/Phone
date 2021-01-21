@@ -6,6 +6,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="jquery-3.5.1.min.js"></script>
+	<script src='https://kit.fontawesome.com/19b32ac59f.js'></script>
 	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
 		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -83,6 +84,7 @@
 				<img src="wallpaper4.jpg" alt="">
 				<div class="ontop">
 					<div id="top2">
+
 						<div id="netname2">
 							<div>GLO LTE</div>
 							<div>Airtel</div>
@@ -179,6 +181,7 @@
 
 
 			<div class="screen4">
+
 				<div id="contacts">
 
 
@@ -217,7 +220,7 @@
 						<div class="contact">
 							<p class="pn1">08123456789 &nbsp; &nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
-									class="material-icons">call</i> </p>
+									class="material-icons" onclick='callic()'>call</i> </p>
 							<p class="pnum"> <i class="material-icons"
 									style="transform: rotate(50deg); font-size: 13px; color: green">arrow_upward</i><i
 									class="material-icons"
@@ -230,7 +233,7 @@
 						<div class="contact">
 							<p class="pn1">08123456789 &nbsp; &nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span> <i
-									class="material-icons">call</i></p>
+									class="material-icons" onclick='callic()'>call</i></p>
 							<p class="pnum"><i class="material-icons"
 									style="transform: rotate(50deg); font-size: 13px; color: green">arrow_upward</i><i
 									class="material-icons"
@@ -243,7 +246,7 @@
 						<div class="contact">
 							<p class="pn1">08123456789 &nbsp; &nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span> <i
-									class="material-icons">call</i></p>
+									class="material-icons" onclick='callic()'>call</i></p>
 							<p class="pnum"><i class="material-icons"
 									style="font-size:13px;color:red;transform: rotate(50deg);">arrow_upward</i><i
 									class="material-icons"
@@ -256,7 +259,7 @@
 						<div class="contact">
 							<p class="pn1">08123456789 &nbsp; &nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
-									class="material-icons">call</i> </p>
+									class="material-icons" onclick='callic()'>call</i> </p>
 							<p class="pnum"><i class="material-icons"
 									style="transform: rotate(50deg); font-size: 13px; color: green">arrow_upward</i><i
 									class="material-icons"
@@ -269,7 +272,7 @@
 						<div class="contact">
 							<p class="pn1">08123456789 &nbsp; &nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
-									class="material-icons">call</i> </p>
+									class="material-icons" onclick='callic()'>call</i> </p>
 							<p class="pnum"><i class="material-icons"
 									style="font-size:13px;color:red;transform: rotate(50deg);">arrow_upward</i> <i
 									class="material-icons"
@@ -282,7 +285,7 @@
 						<div class="contact">
 							<p class="pn1">08123456789 &nbsp; &nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span> <i
-									class="material-icons">call</i></p>
+									class="material-icons" onclick='callic()'>call</i></p>
 							<p class="pnum"><i class="material-icons"
 									style="transform: rotate(50deg); font-size: 13px; color: green">arrow_upward</i><i
 									class="material-icons"
@@ -295,23 +298,33 @@
 						<div class="contact">
 							<p class="pn1">08123456789 &nbsp; &nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Today</span><i
-									class="material-icons">call</i> </p>
-							
+									class="material-icons" onclick='callic()'>call</i> </p>
+
 
 						</div>
 					</div>
 
 
 					<div class="call-log-nav">
-						<button> <i class="material-icons">star_border</i><p>favorites</p>
-</button>
-						<button id="frdial" onclick="dialpad()"><i class="material-icons">keyboard</i><p>Keyboard</p>
+						<button> <i class="material-icons">star_border</i>
+							<p>favorites</p>
+						</button>
+						<button id="frdial" onclick="dialpad()"><i class="material-icons">keyboard</i>
+							<p>Keyboard</p>
 						</button>
 						<button><i class="material-icons">more_horiz</i>
-							<p>More</p> </button>
+							<p>More</p>
+						</button>
+					</div>
+					<div id="overlay">
+						<div id="loading"><i class="fas fa-spinner" id="spin"></i>
+							USSD code running....</div>
+						<div id="bal">Main Bal: N0.00. DATA PLAN ONLY FOR U!! Enjoy 10GB data for #3000 only valid for
+							30 days. Dial *777# now <button onclick="ll()">OK</button></div>
 					</div>
 					<div id="dialpad">
-						<input type="number" id="diinp">
+						<input type="text" id="diinp">
+						<!-- <button id="debt"><i class="material-icons" id="delicon">delete</i></button> -->
 						<button onclick="inputdial(1)">1 <p>oo</p></button>
 						<button onclick="inputdial(2)">2 <p>ABC</p></button>
 						<button onclick="inputdial(3)">3 <p>DEF</p></button>
@@ -321,31 +334,96 @@
 						<button onclick="inputdial(7)">7 <p>PQRS</p></button>
 						<button onclick="inputdial(8)">8 <p>TUV</p></button>
 						<button onclick="inputdial(9)">9 <p>WXYZ</p></button>
-						<button style="font-size: 25px;" onclick="inputdial(2)">* </button>
+						<button style="font-size: 25px;" onclick="inputdial('*')">* </button>
 						<button id="lastcont" onclick="inputdial(0)">0 <p>+</p></button>
-						<button onclick="inputdial(#)">#</button>
+						<button onclick="inputdial('#')">#</button>
 						<div id="sims">
-							<button style="margin-top: -3px;margin-left: 6px;"> <i class="material-icons" style="font-size: 16px;">star_border</i><p>favorites</p></button>
-								<div id="glo">Glo NG</div>
+							<button style="margin-top: -3px;margin-left: 6px;"> <i class="material-icons"
+									style="font-size: 16px;">star_border</i>
+								<p>favorites</p>
+							</button>
+							<div id="glo" onclick="check()">Glo NG</div>
 							<div id="airtel"> Airtel </div>
-							<div style="margin-left: 6px;"><i class="material-icons" style="font-size:20px;margin-top: 10px;margin-left: -14px;">more_horiz</i>
-								<p style="margin-top: -8px;font-size: 10px; color: gray;margin-left: -14px;">More</p>
+							<div style="margin-left: 6px;"><i class="material-icons"
+									style="font-size:20px;margin-top: 10px;margin-left: -14px;color:gray">more_horiz</i>
+								<p style="margin-top: -8px;font-size: 10px; color:gray;margin-left: -14px;">More</p>
 							</div>
 						</div>
+
 					</div>
 
 
 
 				</div>
-
+				<div id="durationcall">
+					<p>Last call was <strong id="dur"></strong>sec. Out of call Airtime? Dial *321# to borrow airtime</p> <button onclick="ll()">OK</button>
+					
+				</div>
 
 				<!-- <h2>Designed by Kawthar &copy;</h2> -->
 			</div>
-			<div id="homenav">
-				<div id="minimise"><i class="material-icons" style="font-size: 19px;">crop_square</i>
+			<div class="screen5">
+				<section>
+					<div>
+						<h5 id="callsim">Card 2(Airtel NG)</h5>
+						<h3 id="dialednum"></h3>
+						<div style="display: flex; color: white;margin-top: -9px;" id="ongoing"><h6 id="oncall">On-going call &nbsp; </h6><h6 id="seconds"></h6></div>
+						
+					</div>
+
+					<div>
+						<i class="fa fa-user-circle-o" style="font-size:48px;color:rgba(211, 211, 211, 0.63);"></i>
+					</div>
+				</section>
+				<div id="callicons">
+					<div class="ciconss">
+						<i class="material-icons"
+							style="font-size:30px;color:rgba(211, 211, 211, 0.63);margin-top: 10px;">record_voice_over</i>
+						<p>Record</p>
+					</div>
+					<div>
+						<i class="material-icons"
+							style="font-size:48px;margin-left:13px;color:rgba(211, 211, 211, 0.63);">pause_circle_outline</i>
+						<p style="margin-top: -10px;margin-left: 19px;">Hold</p>
+					</div>
+					<div class="ciconss">
+						<i class="material-icons" style="color:rgba(211, 211, 211, 0.63);margin-top: 10px;">call</i> <span
+							style="color:rgba(211, 211, 211, 0.63)">+</span>
+						<p>Add</p>
+					</div>
+					<div class="ciconss" style="margin-left: 19px;">
+						<i class='fas fa-user-alt' style='font-size:28px;margin-top: 10px; color:rgba(211, 211, 211, 0.63);'></i>
+						<p>Contacts</p>
+					</div>
+					<div class="ciconss">
+						<i class='fas fa-volume-mute' style='font-size:30px;margin-top: 10px;color:rgba(211, 211, 211, 0.63);'></i>
+						<p style="font-size: 12px">Mute on</p>
+					</div>
+					<div class="ciconss">
+						<i class="material-icons" style="font-size:30px;margin-top: 10px;color:rgba(211, 211, 211, 0.63);">event_note</i>
+						<p>Note</p>
+					</div>
+
 				</div>
-				<div id="middle"></div>
-				<button id="exit" onclick="exit()" ><i class="material-icons"  style="font-size: 30px;margin-top: -7px;">keyboard_arrow_left</i>
+				<div id="callforw">
+					<p>Call forwarding</p>
+					<p>On-conditional</p>
+				</div>
+				
+
+				<div class="cutcall" onclick="cutcall()">
+					<i class="material-icons" style="font-size:40px;color:white">call_end</i>
+				</div>
+
+			</div>
+
+			<div id="homenav">
+				<div id="minimise"><i class="material-icons" id="min1"
+						style="font-size: 19px;color: rgb(226, 226, 226);">crop_square</i>
+				</div>
+				<div id="middle" onclick="exit()"></div>
+				<button id="exit" onclick="exit()"><i class="material-icons" id="exit1"
+						style="font-size: 30px;margin-top: -7px;color: rgb(226, 226, 226);">keyboard_arrow_left</i>
 				</button>
 			</div>
 
@@ -358,11 +436,15 @@
 			<div class="inc"></div>
 			<div class="dec"></div>
 			<div onclick="openlock()" class="power"></div>
+			<!-- <div onclick="onn()" class="power"></div> -->
+
 		</div>
 		<!-- <div class="power" onclick="openlock()"></div> -->
 
 	</section>
+
 </body>
 
 </html>
 <script src="phone.js"></script>
+<!-- <script src="exampe.js"></script> -->

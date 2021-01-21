@@ -29,6 +29,9 @@ section{display: flex;}
 			background-size: cover;
 			/* box-shadow: 1px 1px 1px  whitesmoke; */
 		}
+		.screen1{
+			display: none;
+		}
 		.screen2{
 			/* background: rgba(241, 241, 241, 0.315); */
 			width: 253px;
@@ -457,7 +460,7 @@ section{display: flex;}
 #screen3{
 	/* background: rgba(231, 76, 76, 0.315); */
 	width: 253px;
-	background-image: url(icecream.jpg);
+	background-image: url(wallpaper10.jpg);
 	background-repeat: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -562,14 +565,16 @@ padding: 4px;
 	margin: auto ;
 }
 .dottednav{
-	margin: 70px 0 0 20px ;
+	margin: 40px 0 0 20px ;
 	display: flex;
+	/* border-style: ; */
 }
 .app2 img{
 	width: 40px;
 	height: 40px;
 	margin-left: 14px;
-	margin-top: 6px;
+	margin-top: 30px;
+	border-radius: 23px;
 }
 #hometime{
 	font-size: 45px;
@@ -593,8 +598,9 @@ padding: 4px;
 	height: 501px;
 	border: 1.8px solid black;
 	padding-top:3px;
-	/* display: none; */
+	display: none;
 	border-radius: 30px;
+	transition: 2s;
 
 }
 #butphone{
@@ -686,11 +692,14 @@ padding: 4px;
 }
 #dialpad{
 	border: 1px solid gray;
-	width: 252px;
+	width: 251px;
 	background: white;
 	display: none;
 	position: absolute;
-	top: 189px
+	top: 219px;
+	margin-left: -2px;
+	border: none;
+	box-shadow: 1px 1px 10px lightgray;
 	/* margin-top: -300px; */
 	/* text-align: center; */
 
@@ -702,6 +711,10 @@ padding: 4px;
 	color: gray;
 	text-align: center;
 	display:none;
+	font-size: 20px;
+	border: none;
+	outline: 0;
+	font-family: bolder;
 }
 #dialpad button{
 	/* display: flex; */
@@ -711,12 +724,19 @@ padding: 4px;
 	font-size: 23px;
 	width: 45px;
 	height: 45px;
-	transition: 5s;
+	
 	color: rgb(65, 65, 65);
 	text-align: center;
 	margin-left: 25px;
 	margin-top: 5px;
 	font-weight: bold;
+	outline: 0;
+}
+#dialpad button:hover{
+	border: none;
+	border-radius: 50%;
+	background: rgb(221, 221, 221);
+	/* transition: 0.5s; */
 }
 #dialpad button p{
 	margin-top: -4px;
@@ -724,6 +744,67 @@ padding: 4px;
 	font-size: 11px;
 	color: gray
 
+}
+#loading{
+	border: 1px solid lightgray;
+	background: white;
+	color: black;
+	padding: 17px;
+	position: relative;
+	top: 150px;
+	display: none;
+	width: 240px;
+	margin-left: 7px;
+	border-radius: 4px;
+	text-align: center;
+	
+	
+}
+#bal{
+	border: 1px solid lightgray;
+	background: white;
+	color: black;
+	padding: 17px;
+	position: relative;
+	top: 150px;
+	width: 240px;
+	margin-left: 7px;
+	border-radius: 4px;
+	display: none;
+}
+#bal button{
+	display: block;
+	color: gold;
+	width: 100%;
+	border: none;
+	border-top: 1px solid gold;
+	outline: 0;
+	background: transparent;
+	margin-top: 5px;
+	
+}
+#durationcall{
+	border: 1px solid lightgray;
+	background: white;
+	color: black;
+	padding: 17px;
+	position: relative;
+	top: -90px;
+	width: 240px;
+	margin-left: 7px;
+	border-radius: 4px;
+	display: none;
+}
+#durationcall button{
+	display: block;
+	color: gold;
+	width: 100%;
+	border: none;
+	border-top: 1px solid gold;
+	outline: 0;
+	background: transparent;
+	margin-top: 5px;
+	
 }
 #lastcont{
 	margin-top: 100px;
@@ -764,19 +845,190 @@ padding: 4px;
 	justify-content: space-around;
 	background: transparent;
 	display: none;
+	text-align: center;
+	
 	
 
+}
+#spin{
+	color: goldenrod;
+	display: block;
+	font-size: 21px;
+	animation: spinn;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform: rotate(2deg);
+	margin-bottom: 10px;
+	
+}
+@keyframes spinn{
+	0%{
+		transform: rotate(5deg)
+	}
+	10%{
+		transform: rotate(20deg)
+	}
+	15%{
+		transform: rotate(30deg)
+	}
+	20%{
+		transform: rotate(40deg)
+	}
+	28%{
+		transform: rotate(50deg)
+	}
+	30%{
+		transform: rotate(60deg)
+	}
+	40%{
+		transform: rotate(80deg)
+	}
+	45%{
+		transform: rotate(90deg)
+	}
+	50%{
+		transform: rotate(120deg)
+	}
+	55%{
+		transform: rotate(150deg)
+	}
+	60%{
+		transform: rotate(190deg)
+	}
+	66%{
+		transform: rotate(220deg)
+	}70%{
+		transform: rotate(250deg)
+	}
+	80%{
+		transform: rotate(290deg)
+	}
+	85%{
+		transform: rotate(300deg)
+	}
+	90%{
+		transform: rotate(320deg)
+	}
+	100%{
+		transform: rotate(360deg)
+	}
 }
 #middle{
 	width: 15px;
 	height: 15px;
 	margin-top: 2px;
 	border-radius: 50%;
-	border: 2px solid rgb(80, 80, 80);
+	border: 2px solid rgb(226,226,226);
 }
 #exit{
 	border: none;
 	background: transparent;
 	outline: 0;
 }
+#overlay{
+	background: rgba(0, 0, 0, 0.479);
+	position: absolute;
+	top: 32px;
+	/* left: 0; */
+	width: 254px;
+	margin-left: -3px;
+	height: 484px;
+	border-radius: 30px 30px 0 0;
+	display: none;
+
+
+}
+.screen5{
+	/* background: black; */
+	/* border: 1px solid blue; */
+	width: 253px;
+	background: linear-gradient(dodgerblue,dodgerblue,skyblue); 
+	height: 501px;
+	border: 1.8px solid black;
+	padding-top:9px;
+	padding-left: 9px;
+	display: none;
+	border-radius: 30px;
+	transition: 2s;
+
+}
+.screen5 h5{
+	color: rgb(161, 161, 161);
+	animation-name: scrp;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	/* display: none; */
+}
+.screen5 h3{
+	color: white;
+}
+@keyframes scrp{
+	0%{
+		color: rgb(161, 161, 161);
+	}
+	100%{
+		color: white;
+	}
+}
+.screen5 section{
+	display: flex;
+}
+.cutcall{
+	width: 100px;
+	height: 40px;
+	background: red;
+	border-radius: 50px;
+	text-align-last: center;
+	margin: 32px auto;
+}
+#callicons{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 144px;
+}
+.ciconss{
+	width: 45px;
+	height: 45px;
+	background:rgba(211, 211, 211, 0.363);
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 14px;
+}
+#callicons p{
+	display: block;
+	margin-top: 10px;
+	color: lightgray;
+}
+#cutsect{
+	display: flex;
+}
+#callforw{
+	background: rgba(0, 0, 0, 0.733);
+	color: white;
+	font-size: 13px;
+	position: absolute;
+	top: 51%;
+	display: none;
+	text-align: center;
+	left: 49%;
+	/* height: 42px; */
+	padding: 5px;
+
+	border-radius: 6px;
+}
+#oncall{
+	display: none;
+}
+/* #delicon{
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	display: none;
+}
+#debt{
+	border: none;
+	background: transparent;
+	
+} */
 
