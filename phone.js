@@ -272,6 +272,7 @@ function inputdial(inps) {
 var over = document.getElementById('overlay')
 var screen5 = document.querySelector('.screen5')
 var audio = new Audio('ringing.wav')
+var audio2 = new Audio('Sqi_college.m4a')
 var seconds = document.getElementById('seconds')
 var calsim = document.getElementById('callsim')
 var forw = document.getElementById('callforw')
@@ -343,6 +344,9 @@ function check() {
             function start() {
                 startTime = Date.now();
                 $('#oncall').show()
+                audio2.loop=true
+                audio2.play()
+                
                var timer = setInterval(function printTime() {
                     elapsedTime = Date.now() - startTime;
                     document.getElementById("seconds").innerHTML = timeToString(elapsedTime);
@@ -374,8 +378,9 @@ function check() {
         }, 12000)
 
     }
-    else if (dinp.value == '' || document.getElementById("seconds").innerHTML=="") {
-        dr.style.display="none"
+    else if (dinp.value == ''  ) {
+        // dr.style.display="none"
+        // $('#durationcall').hide()
         return
     }
     else {
@@ -445,11 +450,16 @@ function cutcall(){
     clearInterval('timer')
     var duration =document.getElementById("seconds").innerHTML
     
+    audio2.pause()
+    audio2.currentTime = 0
     console.log(duration)
     $('.screen5').hide()
     $('.screen4').show()
+    dinp.value=''
    dr.style.display="block"
     $('#dur').text(duration)
+    // return;
+    document.getElementById("seconds").innerHTML==""
 
 }
 // function timeToString() {

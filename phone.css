@@ -789,7 +789,7 @@ padding: 4px;
 	color: black;
 	padding: 17px;
 	position: relative;
-	top: -90px;
+	top: -110px;
 	width: 240px;
 	margin-left: 7px;
 	border-radius: 4px;
@@ -851,9 +851,9 @@ padding: 4px;
 
 }
 #spin{
-	color: goldenrod;
+	color: gold;
 	display: block;
-	font-size: 21px;
+	font-size: 30px;
 	animation: spinn;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
