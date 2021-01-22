@@ -170,6 +170,13 @@ section{display: flex;}
 			display: flex;
 			display: none;
 		}
+		#top5{
+			margin-left: 88px;
+			display: flex;
+			margin-top: 2px;
+			/* color: black; */
+			/* display: none; */
+		}
 		#top4{
 			margin-left: 100px;
 			margin-bottom:8px;
@@ -745,6 +752,9 @@ padding: 4px;
 	color: gray
 
 }
+#dialednum{
+	margin-top: -5px;
+}
 #loading{
 	border: 1px solid lightgray;
 	background: white;
@@ -945,7 +955,7 @@ padding: 4px;
 	background: linear-gradient(dodgerblue,dodgerblue,skyblue); 
 	height: 501px;
 	border: 1.8px solid black;
-	padding-top:9px;
+	padding-top:2px;
 	padding-left: 9px;
 	display: none;
 	border-radius: 30px;

@@ -277,7 +277,8 @@ var seconds = document.getElementById('seconds')
 var calsim = document.getElementById('callsim')
 var forw = document.getElementById('callforw')
 var ongoing = document.getElementById('ongoing')
-var sp = dinp.value.slice(5,13)
+var sp = dinp.value.slice(5, 13)
+var mb = document.getElementById('mainbal')
 function check() {
     if (dinp.value == "#124#") {
         // alert("Your balance is empty!")
@@ -293,8 +294,9 @@ function check() {
         // ld.style.display = "block"
 
     }
+
     // else if(dinp.value.startsWith('*123*')&& dinp.value[0]=='#'){
-     
+
     //     dinp.value = ''
     //     dial.style.display = "none"
     //     over.style.display = "block"
@@ -302,7 +304,7 @@ function check() {
     //     $('#loading').show()
     //     $('#bal').html('Your recharge is successful!'+'Your new acc balance is <strong>100</strong>' + '<button onclick="ll()" style="margin-top:16px">OK</button>')
     // }
-    
+
     else if (dinp.value.length >= 10 || dinp.value[0] == '0') {
 
         // alert('calling..')
@@ -335,7 +337,7 @@ function check() {
             audio.currentTime = 0
             console.log('dtooped')
             forw.style.display = "block"
-            
+
             $('#callforw').fadeOut('slow')
             // ('0.05')
             // function print(txt) {
@@ -344,10 +346,10 @@ function check() {
             function start() {
                 startTime = Date.now();
                 $('#oncall').show()
-                audio2.loop=true
+                audio2.loop = true
                 audio2.play()
-                
-               var timer = setInterval(function printTime() {
+
+                var timer = setInterval(function printTime() {
                     elapsedTime = Date.now() - startTime;
                     document.getElementById("seconds").innerHTML = timeToString(elapsedTime);
                 }, 1000)
@@ -355,33 +357,44 @@ function check() {
             function timeToString(time) {
                 let diffInHrs = time / 3600000;
                 let hh = Math.floor(diffInHrs);
-              
+
                 let diffInMin = (diffInHrs - hh) * 60;
                 let mm = Math.floor(diffInMin);
-              
+
                 let diffInSec = (diffInMin - mm) * 60;
                 let ss = Math.floor(diffInSec);
-              
+
                 let diffInMs = (diffInSec - ss) * 1000;
                 let ms = Math.floor(diffInMs);
-              
+
                 let formattedMM = mm.toString().padStart(2, "0");
                 let formattedSS = ss.toString().padStart(2, "0");
                 // let formattedMS = ms.toString().padStart(2, "0");
-                return `${formattedMM}.${formattedSS}`;
-              }
+                return `${formattedMM}:${formattedSS}`;
+            }
 
-          
+
             start()
             // alert('audio stoped')
 
         }, 12000)
 
     }
-    else if (dinp.value == ''  ) {
+    else if (dinp.value == '') {
         // dr.style.display="none"
         // $('#durationcall').hide()
         return
+    }
+    else if (mb.innerText == '') {
+        // $('#oncall').css(){}
+        document.getElementById('oncall').style.display="none"
+        // audio2.pause()
+        // audio2.currentTime = 0
+        console.log('no bal')
+        // return
+        // forw.style.display = "block"
+
+        // $('#callforw').fadeOut('slow')
     }
     else {
         dinp.value = ''
@@ -392,6 +405,7 @@ function check() {
         $('#bal').html('Connection Problem or invalid MMI code' + '<button onclick="ll()" style="margin-top:16px">OK</button>')
 
     }
+
     var bal = document.getElementById('bal')
     setTimeout(function showbal() {
         $('#dialpad').hide()
@@ -412,7 +426,7 @@ function check() {
 function ll() {
     bal.style.display = "none"
     over.style.display = "none"
-    dr.style.display="none"
+    dr.style.display = "none"
 
     // 
 
@@ -446,20 +460,26 @@ function exit() {
 
 }
 var dr = document.getElementById('durationcall')
-function cutcall(){
+function cutcall() {
     clearInterval('timer')
-    var duration =document.getElementById("seconds").innerHTML
-    
+    var duration = document.getElementById("seconds").innerHTML
+
     audio2.pause()
     audio2.currentTime = 0
     console.log(duration)
     $('.screen5').hide()
     $('.screen4').show()
-    dinp.value=''
-   dr.style.display="block"
+    dinp.value = ''
+    dr.style.display = "block"
     $('#dur').text(duration)
-    // return;
-    document.getElementById("seconds").innerHTML==""
+    // 
+    document.getElementById("seconds").innerHTML == ""
+    hnav.style.backgroundColor = "white"
+    hnav.style.border = "1px solid lightgray"
+    ex.style.color = "black"
+    min.style.color = "black"
+    mid.style.borderColor = "black"
+    return
 
 }
 // function timeToString() {
